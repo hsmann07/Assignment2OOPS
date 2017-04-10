@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="car.SelectCarController">
+   <children>
+      <HBox prefHeight="221.0" prefWidth="650.0">
+         <children>
+            <TableView fx:id="tableView" onMouseClicked="#userClickedOnTable" prefHeight="143.0" prefWidth="650.0">
+               <columns>
+                  <TableColumn fx:id="makeColumn" prefWidth="130.0" text="Make" />
+                  <TableColumn fx:id="modelColumn" prefWidth="130.0" text="Model" />
+                  <TableColumn fx:id="yearColumn" prefWidth="130.0" text="Year" />
+                  <TableColumn fx:id="priceColumn" prefWidth="130.0" text="Price" />
+                  <TableColumn fx:id="mileageColumn" prefWidth="130.0" text="Mileage" />
+               </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <Button fx:id="showCarDetailsButton" layoutX="497.0" layoutY="329.0" mnemonicParsing="false" onAction="#showCarDetailsButtonPushed" text="SHOW CAR DETAILS" />
+      <Button fx:id="newRegistrationButton" layoutX="54.0" layoutY="329.0" mnemonicParsing="false" onAction="#newRegistrationButtonPushed" text="REGISTER NEW CAR" />
+   </children>
+</AnchorPane>
